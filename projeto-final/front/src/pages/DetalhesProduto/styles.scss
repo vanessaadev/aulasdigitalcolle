@@ -1,0 +1,35 @@
+
+$color-yellow: #F6AA1C; //variaveis usando sass
+$color-pink: #C92071;
+$color-gray: #666;
+$color-blue: #6FEEFF;
+$color-salmon: #FF6969;
+$color-gray-shoe: #5E5E5E;
+$color-violet: #6D70B7;
+
+// // Cores usadas usando css puro
+// :root {
+//     --Amarelo: #F6AA1C;
+//     --cinza: #666;
+// }
+
+.product-details {
+    .title {
+        font-weight: bold;
+        font-size: 2rem; //1rem tem 16px usar como padrão o font-size do rem
+    }
+    
+    .ref {
+        color:  $color-gray; //assim eu chamo a variavel no sass
+        font-size: 0.75rem;
+    }
+    
+    .reviews svg { //svg significa que eu quero mudar somente os arquivos svg (no caso os icones)
+        color: $color-yellow;
+    }
+
+    .buy, .buy:hover {
+        background-color: $color-yellow;
+    }
+    
+} 

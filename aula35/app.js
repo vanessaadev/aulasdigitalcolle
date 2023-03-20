@@ -5,13 +5,14 @@ const port = "8000"; //na porta 8000
 const userController = require("./users"); //estou chamando o arquivo users.js
 
 const server = http.createServer((req, res) => {
-    res.end("Hello world") //resposta final
+    if(req.url == "./users"){
+        res.end(userController.listUser());
+    }else{
+        res.end("Hello world");
+    }
 });
 
 server.listen(port, host, () => { //listen == ouvindo, ele está aguardando requisições
-    // if(req.){
-
-    // }
     console.log(`Servidor de pé no link: http://${host}:${port}`)
 })
 

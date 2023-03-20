@@ -13,7 +13,7 @@ function updateUser() {
 }
 
 function listUser() {
-    console.log("Lista de usuários")
+    return "Lista de usuários";
 }
 
 function deleteUser() {
